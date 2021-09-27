@@ -13,12 +13,6 @@ variable "iam_role_name" {
   description = "The IAM role name."
 }
 
-# variable "external_id_length" {
-#   type        = number
-#   default     = 16
-#   description = "The length of the external ID to generate. Max length is 1224. Ignored when use_existing_iam_role is set to `true`"
-# }
-
 variable "lacework_aws_account_id" {
   type        = string
   default     = "434813966438"
@@ -42,9 +36,3 @@ variable "wait_time" {
   default     = "10s"
   description = "Amount of time to wait before the next resource is provisioned"
 }
-
-# variable "tags" {
-#   type        = map(string)
-#   description = "A map/dictionary of Tags to be assigned to created resources"
-#   default     = {}
-# }
